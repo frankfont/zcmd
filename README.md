@@ -59,13 +59,13 @@ Now, start the demonstration stack
 **Step 4: zcmd up**
 
 Give the demonstration stack about a minute to start then have a look
-at the webpage available at localhost:12380
+at the webpage available at localhost:11080
 
 And finally, use one of the following commands to shut down your stack when you are done with it.
 * zcmd down <--- shuts down just the current stack
 * zcmd kill-all-containers <-- shuts down ALL stacks running 
 
-Tip: Edit the stack.env if you want to use a different port number.
+Tip: Edit the stack.env if you want to use a different port number.  More details about that stack are available on the https://github.com/frankfont/zcmd-demo-stack website.
 
 SOME FOLDERS EXPLAINED
 ======================
