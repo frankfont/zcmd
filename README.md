@@ -28,15 +28,18 @@ Some of the commands assume you have the following installed on your host:
     * docker-compose <-- required for almost everything
     * aws utilities  <-- required for S3 interations
     * mysql-client   <-- required for most database actions
+    * python3        <-- required for some operations
 
-EXAMPLE CONTENT BOTTOM OF ".bashrc" FILE
-========================================
-* ZCMD_HOME="$HOME/zcmd"
-* PATH="$PATH:$ZCMD_HOME/devutils"
-* alias cdutil=". ${ZCMD_HOME}/devutils/cdutil.sh"
+Important Configuration Settings
+--------------------------------
+Update your ".bashrc" file, or ".profile" and log back in.
 
-* alias python="python3"
-* alias pip="pip3"
+    * ZCMD_HOME="$HOME/zcmd"
+    * PATH="$PATH:$ZCMD_HOME/devutils"
+    * alias cdutil=". ${ZCMD_HOME}/devutils/cdutil.sh"
+
+    * alias python="python3"
+    * alias pip="pip3"
 
 HELLO WORLD EXAMPLE STACK
 =========================
@@ -49,8 +52,8 @@ Create the place where we recommend placing your stacks...
 Clone the demonstration stack...
 **Step 2: git clone https://github.com/frankfont/zcmd-demo-stack.git**
 
-Go into the stack folder of your demonstration stack**
-**Step 3: cd ~/docker-repos/stack
+Go into the stack folder of your demonstration stack... 
+**Step 3: cd ~/docker-repos/stack**
 
 Now, start the demonstration stack
 **Step 4: zcmd up**
@@ -64,8 +67,8 @@ And finally, use one of the following commands to shut down your stack when you 
 
 Tip: Edit the stack.env if you want to use a different port number.
 
-IMPORTANT FOLDERS
-=================
+SOME IMPORTANT FOLDERS
+======================
 
 devutils
 
@@ -97,3 +100,8 @@ runtime_stack
     Docker compositions of a few core stacks to be shared by many applications.  
     Only core stacks should be here.  All application specific stacks belong 
     in their own git repos elsewhere.
+
+ENVIRONMENT COMPATIBILITY
+=========================
+The framework has been successfully used in Linux and Mac OSX.  It has 
+not been tested using Docker in native Windows.
