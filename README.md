@@ -1,6 +1,11 @@
 PURPOSE
 =======
-This repo is for ZCMD utility and its supporting files.  
+The ZCMD framework is a collection of utilities and configuration
+conventions that facilitate the operation and management of 
+docker containers and collections of containers ("zcmd stacks").
+
+The framework is intended to be appropriate for use in DEV, STAGE, and
+PROD environments.
 
 REQUIREMENTS
 ============
@@ -26,12 +31,12 @@ Some of the commands assume you have the following installed on your host:
 
 EXAMPLE CONTENT BOTTOM OF ".bashrc" FILE
 ========================================
-ZCMD_HOME="$HOME/zcmd"
-PATH="$PATH:$ZCMD_HOME/devutils"
-alias cdutil=". ${ZCMD_HOME}/devutils/cdutil.sh"
+* ZCMD_HOME="$HOME/zcmd"
+* PATH="$PATH:$ZCMD_HOME/devutils"
+* alias cdutil=". ${ZCMD_HOME}/devutils/cdutil.sh"
 
-alias python="python3"
-alias pip="pip3"
+* alias python="python3"
+* alias pip="pip3"
 
 HELLO WORLD EXAMPLE STACK
 =========================
