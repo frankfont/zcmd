@@ -1,6 +1,6 @@
 PURPOSE
 =======
-The ZCMD framework is a collection of utilities and configuration
+The ZCMD framework is a collection of bash and python utilities and configuration
 conventions that facilitate the operation and management of 
 docker containers and collections of containers ("zcmd stacks").
 
@@ -67,7 +67,7 @@ And finally, use one of the following commands to shut down your stack when you 
 
 Tip: Edit the stack.env if you want to use a different port number.
 
-SOME IMPORTANT FOLDERS
+SOME FOLDERS EXPLAINED
 ======================
 
 devutils
